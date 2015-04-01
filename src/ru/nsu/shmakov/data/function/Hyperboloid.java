@@ -1,29 +1,14 @@
-package ru.nsu.shmakov.data;
+package ru.nsu.shmakov.data.function;
 
-import ru.nsu.shmakov.Main;
+import ru.nsu.shmakov.data.function.Function;
 
 /**
- * Created by Иван on 30.03.2015.
+ * Created by Иван on 01.04.2015.
  */
-public class MyFunction1 implements Function {
+public class Hyperboloid implements Function {
     @Override
     public double getValue(double x, double y) {
-        return x*Math.sin(x + y);
-    }
-
-    @Override
-    public double getDerivativeDx(double x, double y) {
-        return x*Math.cos(x + y) + Math.sin(x + y);
-    }
-
-    @Override
-    public double getDerivativeDy(double x, double y) {
-        return x*Math.cos(x + y);
-    }
-
-    @Override
-    public double getDerivativeDxDy(double x, double y) {
-        return Math.cos(x + y) - x*Math.sin(x + y);
+        return Math.sqrt(1 + x*x + y*y);
     }
 
     @Override

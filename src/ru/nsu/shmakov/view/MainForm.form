@@ -9,7 +9,7 @@
     <children>
       <component id="7e624" class="ru.nsu.shmakov.view.ImagePanel" binding="plot">
         <constraints>
-          <grid row="0" column="0" row-span="5" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="0" row-span="6" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="10.0" weighty="10.0"/>
         </constraints>
         <properties/>
@@ -26,7 +26,7 @@
       </component>
       <component id="206e1" class="javax.swing.JRadioButton" binding="interpolationRadioButton">
         <constraints>
-          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
@@ -35,7 +35,7 @@
       </component>
       <component id="c5a78" class="javax.swing.JRadioButton" binding="ditheringRadioButton">
         <constraints>
-          <grid row="2" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="0.0"/>
         </constraints>
         <properties>
@@ -44,7 +44,7 @@
       </component>
       <component id="fcf9d" class="javax.swing.JSeparator">
         <constraints>
-          <grid row="0" column="1" row-span="5" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="0" column="1" row-span="6" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.5" weighty="0.5"/>
         </constraints>
         <properties>
@@ -53,16 +53,25 @@
       </component>
       <vspacer id="9e169">
         <constraints>
-          <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
           <gridbag weightx="0.0" weighty="1.0"/>
         </constraints>
       </vspacer>
       <component id="e4115" class="ru.nsu.shmakov.view.ImagePanel" binding="legend">
         <constraints>
-          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <grid row="5" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
           <gridbag weightx="1.0" weighty="9.0"/>
         </constraints>
         <properties/>
+      </component>
+      <component id="31eac" class="javax.swing.JRadioButton" binding="gridRadioButton">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <text value="Grid"/>
+        </properties>
       </component>
     </children>
   </grid>
@@ -71,6 +80,7 @@
       <member id="206e1"/>
       <member id="c5a78"/>
       <member id="b7b3b"/>
+      <member id="31eac"/>
     </group>
   </buttonGroups>
 </form>

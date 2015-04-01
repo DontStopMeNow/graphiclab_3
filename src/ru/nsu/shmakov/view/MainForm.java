@@ -5,6 +5,7 @@ import javax.swing.event.AncestorListener;
 import javax.swing.plaf.DimensionUIResource;
 import java.awt.event.HierarchyEvent;
 import java.awt.event.HierarchyListener;
+import java.awt.image.BufferedImage;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyVetoException;
@@ -21,6 +22,7 @@ public class MainForm  extends JFrame {
     private JRadioButton ditheringRadioButton;
     private ImagePanel legend;
     private ImagePanel plot;
+    private JRadioButton gridRadioButton;
 
     public MainForm() {
         super("Main Frame");
@@ -43,4 +45,29 @@ public class MainForm  extends JFrame {
         });
 
     }
+
+    public void setPlot(BufferedImage image) {
+        plot.setImage(image);
+    }
+
+    public void setLegend(BufferedImage image) {
+        legend.setImage(image);
+    }
+
+    public int getPlotWidth() {
+        return plot.getWidth();
+    }
+
+    public int getPlotHeight() {
+        return plot.getHeight();
+    }
+
+    public int getLegendWidth() {
+        return legend.getWidth();
+    }
+
+    public int getLegendHeight() {
+        return legend.getHeight();
+    }
+
 }
